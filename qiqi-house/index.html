@@ -2362,7 +2362,5 @@ if(location.protocol==='file:'){
   var f=decodeURIComponent(location.pathname.split('/').pop()||'');
   b.href=encodeURI(f.replace(/-EN\.html$/i,'.html'));
 }else{
-  b.addEventListener('click',function(e){e.preventDefault();
-    try{localStorage.setItem('qiqi-lang','zh')}catch(_){}
-    location.href=location.pathname+'?lang=zh';});
+  b.href='cn/';
 }})();</script>
